@@ -2,8 +2,8 @@ const Hero = () =>
 {
     return (
         <>
-            <section id="hero">
-                <div className="text-hero">
+            <section>
+                <div>
                     <h1>Camssify - Sua Câmera Focada em Estudos</h1>
 
                     <p>
@@ -12,7 +12,7 @@ const Hero = () =>
                     </p>
                 </div>
 
-                <div className="image-hero">
+                <div>
                     <img src="assets/images/Jovi-Phone.jpg" alt="a cell phone in the water"/>
                 </div>
             </section>

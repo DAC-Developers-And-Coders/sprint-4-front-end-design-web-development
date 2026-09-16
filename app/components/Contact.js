@@ -1,7 +1,7 @@
 const Options = ({ link, asset, imgAlt, txt }) =>
 {
     return(
-        <div className="option">
+        <div>
             <a href={link} target="_blank"><img src={asset} alt={imgAlt} loading="lazy"/></a>
             <h2>{txt}</h2>
         </div>
@@ -25,14 +25,14 @@ const Contact = () =>
 
     return(
         <>
-            <section id="contact">
-                <div className="title-contact">
-                    <h1>Contato</h1>
+            <section>
+                <h1>Contato</h1>
+                <div>
                     <h3>
                         Gostaria de falar conosco? Pode nos encontrar nas seguintes plataformas!
                     </h3>
                 </div>
-                <div className="options-contact">
+                <div>
                     {options}
                 </div>
 

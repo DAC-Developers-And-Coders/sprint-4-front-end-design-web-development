@@ -51,12 +51,12 @@ const Gallery = () =>
 
     return(
         <>
-            <section id="gallery">
-                <div className="flow-gallery">
-                    <h1>Galeria</h1>
+            <section>
+                <h1>Galeria</h1>
+                <div>
                     <h2>Fluxo da ferramenta</h2>
-                    <div className="flow-img-gallery">
-                        <div className="photo-stages">
+                    <div>
+                        <div>
                             {stages.map((stage) => (
                                 <img
                                     key={stage.image}
@@ -66,7 +66,7 @@ const Gallery = () =>
                             ))}
                         </div>
 
-                        <div className="photo-stages">
+                        <div>
                             {stages.map((stage) => (
                                 <img
                                     key={stage.image}
@@ -78,10 +78,10 @@ const Gallery = () =>
                     </div>
                 </div>
 
-                <div className="simulation-gallery">
+                <div>
                     <h2>Simulação</h2>
 
-                    <div className="btn-random">
+                    <div>
                         <button onClick={() => {
                             if(showRandomImage) {
                                 setShowRandomImage(false);
@@ -92,18 +92,18 @@ const Gallery = () =>
                     </div>
 
                     {showRandomImage ? (
-                        <div className="random-photo-div">
-                            <div className="random-simulation-photo"><img src={randomImage} alt="random simulation image" /></div>
+                        <div>
+                            <div><img src={randomImage} alt="random simulation image" /></div>
                         </div>
                     ) : (
-                        <div className="simulation-img-gallery">
-                            <div className="simulation-photo row-2"><img src={images[0]} alt="image with contrast applied" loading ="lazy" /></div>
-                            <div className="simulation-photo"><img src={images[1]} alt="tutorial menu" loading ="lazy" /></div>
-                            <div className="simulation-photo"><img src={images[2]} alt="study plan" loading ="lazy" /></div>
-                            <div className="simulation-photo"><img src={images[3]} alt="Tag recommendation" loading ="lazy" /></div>
-                            <div className="simulation-photo row-2"><img src={images[4]} alt="image without applied contrast" loading ="lazy" /></div>
-                            <div className="simulation-photo"><img src={images[5]} alt="with another tag recommendation" loading ="lazy" /></div>
-                            <div className="simulation-photo col-2"><img src={images[6]} alt="folder storage" loading ="lazy" /></div>
+                        <div>
+                            <div><img src={images[0]} alt="image with contrast applied" loading ="lazy" /></div>
+                            <div><img src={images[1]} alt="tutorial menu" loading ="lazy" /></div>
+                            <div><img src={images[2]} alt="study plan" loading ="lazy" /></div>
+                            <div><img src={images[3]} alt="Tag recommendation" loading ="lazy" /></div>
+                            <div><img src={images[4]} alt="image without applied contrast" loading ="lazy" /></div>
+                            <div><img src={images[5]} alt="with another tag recommendation" loading ="lazy" /></div>
+                            <div><img src={images[6]} alt="folder storage" loading ="lazy" /></div>
                         </div>
                     )}
                 </div>

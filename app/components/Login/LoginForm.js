@@ -74,10 +74,10 @@ const LoginForm = () => {
 
 
     return (
-        <div className="container-login">
-            <form className="form-login" onSubmit={handleLogin}>
+        <div>
+            <form onSubmit={handleLogin}>
                 <h1>Login</h1>
-                <div className="input-login">
+                <div>
                     <input 
                     type="email" 
                     placeholder="E-mail"
@@ -85,7 +85,7 @@ const LoginForm = () => {
                     onChange={(e) => setUsername(e.target.value)}/>
                 </div>
                 
-                <div className="input-login">
+                <div>
                     <input 
                     type="password" 
                     placeholder="Senha"
@@ -93,7 +93,7 @@ const LoginForm = () => {
                     onChange={(e) => setPassword(e.target.value)}/>
                 </div>
 
-                <div className="btn-login">
+                <div>
                     <button 
                     type= "submit">Entrar</button>
                     <button type="button"

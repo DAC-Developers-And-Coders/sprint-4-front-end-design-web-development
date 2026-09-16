@@ -18,11 +18,11 @@ const Header = () =>
     
     return(
         <>
-            <header className="main-header">
+            <header>
                 <h2>DAC - JOVI</h2>
 
-                <nav className="nav-header">
-                    <ul className="nav-header-menu">
+                <nav>
+                    <ul>
                         {links}
                     </ul>
                 </nav>
