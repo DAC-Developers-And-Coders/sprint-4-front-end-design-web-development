@@ -2,7 +2,7 @@ const Solution = () =>
 {
     return(
         <>
-            <section>
+            <section id="solution">
                 <h1>Solução</h1>
                 <div>
                     <p>

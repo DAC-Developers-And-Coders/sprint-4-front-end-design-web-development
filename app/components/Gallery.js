@@ -51,7 +51,7 @@ const Gallery = () =>
 
     return(
         <>
-            <section>
+            <section id="gallery">
                 <h1>Galeria</h1>
                 <div>
                     <h2>Fluxo da ferramenta</h2>

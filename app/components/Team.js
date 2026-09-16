@@ -2,7 +2,7 @@ const Team = () =>
 {
     return(
         <>
-            <section>
+            <section id="team">
                 <h1>Conheça nossa Equipe!</h1>
                 <h2>Developers and Coders</h2>
                 

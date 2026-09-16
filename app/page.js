@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       
-      <main>
+      <main className="bg-background">
         <Hero />
         <Solution />
         <TargetAudience />

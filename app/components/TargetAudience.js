@@ -2,7 +2,7 @@ const TargetAudience = () =>
 {
     return(
         <>
-            <section>
+            <section id="target-audience">
                 <h1>Público-alvo</h1>
 
                 <div>

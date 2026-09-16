@@ -2,7 +2,7 @@ const Hero = () =>
 {
     return (
         <>
-            <section>
+            <section id="hero">
                 <div>
                     <h1>Camssify - Sua Câmera Focada em Estudos</h1>
 
