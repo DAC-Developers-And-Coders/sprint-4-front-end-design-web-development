@@ -19,6 +19,7 @@ const TargetAudience = () =>
                         </div>  
                     </div>
                 ))}
+
             </section>
         </>
     );

@@ -1,14 +1,8 @@
 "use client"
 
 import { useState } from "react";
+import Carousel from "./Carousel";
 
-const ChooseRandomImage = (images, setRandomImage, setShowRandomImage) =>
-{
-    const index = Math.floor(Math.random() * images.length);
-    console.log(images[index]);
-    setRandomImage(images[index]);
-    setShowRandomImage(true);
-}
 
 const Gallery = () =>
 {
@@ -23,90 +17,27 @@ const Gallery = () =>
         "./assets/images/gallery/simulation_5.png"
     ];
 
-    const [randomImage, setRandomImage] = useState(images[0]);
-    const [showRandomImage, setShowRandomImage] = useState(false);
-
     const stages = [
-        {
-            image: "./assets/images/gallery/etapa_1_foto.png",
-            alt: "taking a photo"
-        },
-        {
-            image: "./assets/images/gallery/etapa_2_foto.png",
-            alt: "cropping the image"
-        },
-        {
-            image: "./assets/images/gallery/etapa_3_foto.png",
-            alt: "increasing contrast"
-        },
-        {
-            image: "./assets/images/gallery/etapa_4_foto.png",
-            alt: "creating a tag"
-        },
-        {
-            image: "./assets/images/gallery/etapa_5_foto.png",
-            alt: "storing the photo"
-        }
+        { id:1, image: "./assets/images/gallery/etapa_1_foto.png", alt: "taking a photo"},
+        { id:2, image: "./assets/images/gallery/etapa_2_foto.png", alt: "cropping the image"},
+        { id:3, image: "./assets/images/gallery/etapa_3_foto.png", alt: "increasing contrast"},
+        { id:4, image: "./assets/images/gallery/etapa_4_foto.png", alt: "creating a tag"},
+        { id:5, image: "./assets/images/gallery/etapa_5_foto.png", alt: "storing the photo"}
     ];
 
     return(
         <>
-            <section id="gallery">
-                <h1>Galeria</h1>
-                <div>
-                    <h2>Fluxo da ferramenta</h2>
-                    <div>
-                        <div>
+            <section id="gallery" className="grid grid-cols-1 h-screen mx-8">
+                <h1 className="text-4xl pt-20 text-center">Galeria</h1>
+                    <div className="max-w-80">
+                        <Carousel autoStage={true}>
                             {stages.map((stage) => (
                                 <img
-                                    key={stage.image}
-                                    src={stage.image}
-                                    alt={stage.alt}
-                                />
+                                key={stage.id || stage.image} 
+                                src={stage.image}/>
                             ))}
-                        </div>
-
-                        <div>
-                            {stages.map((stage) => (
-                                <img
-                                    key={stage.image}
-                                    src={stage.image}
-                                    alt={stage.alt}
-                                />
-                            ))}
-                        </div>
+                        </Carousel>
                     </div>
-                </div>
-
-                <div>
-                    <h2>Simulação</h2>
-
-                    <div>
-                        <button onClick={() => {
-                            if(showRandomImage) {
-                                setShowRandomImage(false);
-                            } else {
-                                ChooseRandomImage(images, setRandomImage, setShowRandomImage);
-                            }
-                        }}>{showRandomImage ? "Voltar para galeria" : "Ver imagem aleatória"}</button>
-                    </div>
-
-                    {showRandomImage ? (
-                        <div>
-                            <div><img src={randomImage} alt="random simulation image" /></div>
-                        </div>
-                    ) : (
-                        <div>
-                            <div><img src={images[0]} alt="image with contrast applied" loading ="lazy" /></div>
-                            <div><img src={images[1]} alt="tutorial menu" loading ="lazy" /></div>
-                            <div><img src={images[2]} alt="study plan" loading ="lazy" /></div>
-                            <div><img src={images[3]} alt="Tag recommendation" loading ="lazy" /></div>
-                            <div><img src={images[4]} alt="image without applied contrast" loading ="lazy" /></div>
-                            <div><img src={images[5]} alt="with another tag recommendation" loading ="lazy" /></div>
-                            <div><img src={images[6]} alt="folder storage" loading ="lazy" /></div>
-                        </div>
-                    )}
-                </div>
             </section>
         </>
     );
