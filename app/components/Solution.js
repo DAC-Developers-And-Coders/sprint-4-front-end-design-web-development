@@ -22,16 +22,16 @@ const Solution = () =>
 
                 {functionsSolution.map((item) => (
                     <div key={item.id} className="grid grid-cols-2 justify-items-center mx-8 ml-15 items-center">
-                    <div className="flex flex-col gap-2 w-full px-4">
-                        <h3 className="text-2xl font-bold">{item.title}</h3>
-                        <p className="text-lg">{item.text}</p>
-                    </div>
+                        <div className="flex flex-col gap-2 w-full px-4">
+                            <h3 className="text-2xl font-bold">{item.title}</h3>
+                            <p className="text-lg">{item.text}</p>
+                        </div>
 
-                    <div className="w-[60%] text-center">
-                        <img className="w-full transition-all duration-700 hover:scale-104 rounded-md" 
-                        src={item.image} alt={item.imageAlt}
-                    />
-                    </div>
+                        <div className="w-[60%] text-center">
+                            <img className="w-full transition-all duration-700 hover:scale-104 rounded-md" 
+                            src={item.image} alt={item.imageAlt}
+                        />
+                        </div>
                     </div>
                 ))}
             </section>

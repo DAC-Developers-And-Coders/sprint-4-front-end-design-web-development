@@ -3,7 +3,7 @@
 import {ChevronLeft, ChevronRight} from "lucide-react"
 import { useState, useEffect } from "react";
 
-const Carousel = ({children: stages, autoStage=false, autoStageInterval=3000}) => 
+const Carousel = ({children: stages, autoStage=false, autoStageInterval=5000}) => 
 {
     const [current, setCurrent] = useState(0)
 
