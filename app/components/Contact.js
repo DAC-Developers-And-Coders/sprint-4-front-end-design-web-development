@@ -23,11 +23,11 @@ const Contact = () =>
                 <h2 className="text-2xl text-center h-10">Gostaria de falar conosco? Pode nos encontrar nas seguintes plataformas!</h2>
                 <div className="grid grid-cols-3 gap-3 mx-8">
                     {contacts.map((contact) => (
-                        <div key={contact.id} className="border-3 rounded-2xl transition-all duration-700 hover:scale-102 p-3 flex flex-col gap-8 items-center text-center">
+                        <div key={contact.id} className="border-3 rounded-2xl transition-all duration-700 hover:scale-102 p-3 flex flex-col gap-8 items-center text-center max-md:h-70 max-md:gap-2">
                             <a href={contact.link}>
                                 <img className="w-100" src={contact.image}></img>
                             </a>
-                            <h2 className="text-4xl">{contact.name}</h2>
+                            <h2 className="text-4xl max-md:text-lg">{contact.name}</h2>
                         </div>
                     ))}
                 </div>

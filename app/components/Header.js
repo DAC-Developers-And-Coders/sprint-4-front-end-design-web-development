@@ -19,10 +19,10 @@ const Header = () =>
     return(
         <>
             <header className="bg-black text-snow sticky top-0 z-50 left-0 right-0 w-full flex items-center justify-between px-8 h-15">
-                <h2 className="text-3xl">DAC - JOVI</h2>
+                <h2 className="text-2xl max-md:text-lg">DAC - JOVI</h2>
 
                 <nav>
-                    <ul className="flex gap-6 items-center px-6">
+                    <ul className="flex gap-6 items-center text-md px-6 max-md:text-[10px] max-md:gap-4">
                         {links}
                     </ul>
                 </nav>

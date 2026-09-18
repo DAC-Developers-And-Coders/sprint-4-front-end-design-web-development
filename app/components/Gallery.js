@@ -15,19 +15,19 @@ const Gallery = () =>
 
     return(
         <>
-            <section id="gallery" className="grid grid-cols-1 h-[420dvh] gap-4 mx-8 justify-items-center">
+            <section id="gallery" className="grid grid-cols-1 h-[420dvh] gap-4 mx-8 justify-items-center max-md:h-[235dvh]">
                 <h1 className="text-4xl pt-20 text-center">Galeria</h1>
                 <h2 className="text-2xl text-center">Fluxo da Ferramenta</h2>
-                <div className="max-w-300 h-165 border-2 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104">
+                <div className="max-w-300 h-165 border-2 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104 max-md:max-w-100 max-md:h-190">
                     <Carousel autoStage={true}>
                         {stages.map((stage) => (
-                            <div key={stage.id || stage.image} className="min-w-full flex gap-8 items-center justify-center">
+                            <div key={stage.id || stage.image} className="min-w-full flex gap-8 items-center justify-center max-md:flex-col">
                                 <img 
                                     src={stage.image} 
                                     alt={stage.alt} 
                                     className="w1/2 h-150 pt-2"
                                 />
-                                <h2 className="w-1/2 text-4xl text-center">
+                                <h2 className="w-1/2 text-4xl text-center max-md:text-sm">
                                     {stage.text}
                                 </h2>
                             </div>
