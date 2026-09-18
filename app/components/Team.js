@@ -1,37 +1,26 @@
 const Team = () =>
 {
+    const team = [
+        {id: 1, name:"ANDRÉ VICTOR NASCIMENTO", rm:"RM 570567", text:"Responsável pelo desenvolvimento do sistema em Python, documentação e Team Leader, auxiliando na organização, planejamento e evolução do projeto."},
+        {id: 2, name:"DAVI DIAS DE SOUZA FREITAS", rm:"RM 574089", text:"Responsável pelo desenvolvimento do sistema em Python, contribuindo para a implementação e aprimoramento das principais funcionalidades."},
+        {id: 3, name:"DAVID MIKAEL DIAS DA SILVA", rm:"RM 571637", text:"Responsável pelo desenvolvimento do sistema em Python, contribuindo para a implementação e aprimoramento das principais funcionalidades."},
+        {id: 4, name:"GABRIEL NOVAGA PEREIRA", rm:"RM 573196", text:"Responsável pelo desenvolvimento em HTML, CSS e JavaScript, além de atuar como Team Leader, coordenando tarefas e decisões técnicas."},
+        {id: 5, name:"MATHEUS MONTEIRO DA SILVA", rm:"RM 573842", text:"Auxilia no desenvolvimento do site, contribuindo com ideias, melhorias visuais e implementação de recursos para aprimorar a experiência dos usuários."}
+    ]
     return(
         <>
-            <section id="team">
-                <h1>Conheça nossa Equipe!</h1>
-                <h2>Developers and Coders</h2>
+            <section id="team" className="grid grid-cols-1 h-screen gap-8 mx-8 content-start">
+                <h1 className="text-4xl pt-20 text-center h-30">Conheça nossa Equipe!</h1>
+                <h2 className="text-2xl text-center h-10">Developers and Coders</h2>
                 
-                <div>
-                    <div>
-                        <h2>ANDRÉ VICTOR NASCIMENTO</h2>
-                        <h3>RM 570567</h3>
-                        <p>Responsável pelo desenvolvimento do sistema em Python, documentação e Team Leader, auxiliando na organização, planejamento e evolução do projeto.</p>
-                    </div>
-                    <div>
-                        <h2>DAVI DIAS DE SOUZA FREITAS</h2>
-                        <h3>RM 574089</h3>
-                        <p>Responsável pelo desenvolvimento do sistema em Python, contribuindo para a implementação e aprimoramento das principais funcionalidades.</p>
-                    </div>
-                    <div>
-                        <h2>DAVID MIKAEL DIAS DA SILVA</h2>
-                        <h3>RM 571637</h3>
-                        <p>Auxilia no desenvolvimento do sistema em Python, colaborando nos testes e melhorias das funcionalidades desenvolvidas.</p>
-                    </div>
-                    <div>
-                        <h2>GABRIEL NOVAGA PEREIRA</h2>
-                        <h3>RM 573196</h3>
-                        <p>Responsável pelo desenvolvimento em HTML, CSS e JavaScript, além de atuar como Team Leader, coordenando tarefas e decisões técnicas.</p>
-                    </div>
-                    <div>
-                        <h2>MATHEUS MONTEIRO DA SILVA</h2>
-                        <h3>RM 573842</h3>
-                        <p>Auxilia no desenvolvimento do site, contribuindo com ideias, melhorias visuais e implementação de recursos para aprimorar a experiência dos usuários.</p>
-                    </div>
+                <div className="flex flex-wrap justify-center gap-5 p-4">
+                    {team.map((member) => (
+                        <div key={member.id} className="w-full h-80 md:w-[calc(33.3%-1.5rem)] border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104 p-3 flex flex-col gap-8">
+                            <h2 className="text-3xl text-center">{member.name}</h2>
+                            <h3 className="text-2xl text-center">{member.rm}</h3>
+                            <p className="text-xl text-center">{member.text}</p> 
+                        </div>
+                    ))}
                 </div>
             </section>
         </>
