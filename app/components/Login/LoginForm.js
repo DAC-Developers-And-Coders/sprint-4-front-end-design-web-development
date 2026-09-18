@@ -41,9 +41,9 @@ const LoginForm = () => {
             return;
         }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-        if(!emailRegex.test(username)) {
+        if(!emailFormat.test(username)) {
             alert("Digite um email válido.")
             return;
         }
@@ -74,33 +74,39 @@ const LoginForm = () => {
 
 
     return (
-        <div>
-            <form onSubmit={handleLogin}>
-                <h1>Login</h1>
-                <div>
-                    <input 
-                    type="email" 
-                    placeholder="E-mail"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}/>
-                </div>
-                
-                <div>
-                    <input 
-                    type="password" 
-                    placeholder="Senha"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}/>
-                </div>
+        <>
+            <div className=" bg-snow border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-400 p-12 w-150 flex flex-col justify-center items-center">
+                <form onSubmit={handleLogin} className="flex flex-col gap-8 text-center items-center">
+                    <h1 className="text-5xl">Login</h1>
+                    <div>
+                        <input 
+                        className="w-75 h-10 text-center border-2 rounded-2xl transition-all duration-500 hover:scale-102"
+                        type="email" 
+                        placeholder="E-mail"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}/>
+                    </div>
+                    
+                    <div>
+                        <input 
+                        className="w-75 h-10 text-center border-2 rounded-2xl transition-all duration-500 hover:scale-102"
+                        type="password" 
+                        placeholder="Senha"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}/>
+                    </div>
 
-                <div>
-                    <button 
-                    type= "submit">Entrar</button>
-                    <button type="button"
-                    onClick={handleRegister}>Cadastrar</button>
-                </div>
-            </form>
-        </div>
+                    <div className="flex justify-center gap-12">
+                        <button type= "submit" className="w-43.75 h-15 border-2 rounded-xl text-2xl transition-all duration-500 hover:scale-104">
+                            Entrar
+                        </button>
+                        <button type="button" className="w-43.75 h-15 border-2 rounded-xl text-2xl transition-all duration-500 hover:scale-104" onClick={handleRegister}>
+                            Cadastrar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </>
     )
 }
 
