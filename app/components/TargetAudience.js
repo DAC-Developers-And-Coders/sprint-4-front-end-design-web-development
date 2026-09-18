@@ -13,7 +13,7 @@ const TargetAudience = () =>
 
                 {typeAudience.map((type) => (
                     <div key={type.id} className="flex flex-col items-center">
-                        <div className="shadow-[0_0_50px] shadow-gray-700 flex flex-col text-center gap-8 p-8 w-400 h-50 rounded-2xl bg-black transition-all duration-700 hover:scale-104 max-md:w-100 max-md:h-80 min-xl:w-200 min-xl:h-50 min-xl:gap-4">
+                        <div className="shadow-[0_0_50px] shadow-gray-700 flex flex-col text-center gap-8 p-8 w-400 h-50 rounded-2xl bg-black transition-all duration-700 hover:scale-104 max-md:w-100 max-md:h-80 max-xl:w-200 max-xl:h-50 max-xl:gap-4">
                             <h2 className="text-2xl text-gray-400">{type.title}</h2>
                             <p className="text-xl text-snow">{type.text}</p>
                         </div>  

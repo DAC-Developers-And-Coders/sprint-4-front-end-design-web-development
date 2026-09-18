@@ -12,7 +12,7 @@ const Solution = () =>
 
     return(
         <>
-            <section id="solution" className="grid grid-cols-1 gap-8 h-[180dvh] mx-8 max-md:h-[250dvh] min-xl:h-[190dvh]">
+            <section id="solution" className="grid grid-cols-1 gap-8 h-[190dvh] mx-8 max-md:h-[250dvh]">
                 <h1 className="text-4xl pt-20 text-center">Solução</h1>
                 <div className="text-center">
                     <p className="text-2xl">
