@@ -8,14 +8,14 @@ const TargetAudience = () =>
 
     return(
         <>
-            <section id="target-audience" className="grid grid-cols-1 gap-8 h-screen mx-8 max-md:h-[120dvh]">
+            <section id="target-audience" className="grid grid-cols-1 gap-8 min-h-dvh mx-10">
                 <h1 className="text-4xl pt-20 text-center">Público-alvo</h1>
 
                 {typeAudience.map((type) => (
                     <div key={type.id} className="flex flex-col items-center">
-                        <div className="shadow-[0_0_50px] shadow-gray-700 flex flex-col text-center gap-8 p-8 w-400 h-50 rounded-2xl bg-black transition-all duration-700 hover:scale-104 max-md:w-100 max-md:h-80 max-xl:w-200 max-xl:h-50 max-xl:gap-4">
-                            <h2 className="text-2xl text-gray-400">{type.title}</h2>
-                            <p className="text-xl text-snow">{type.text}</p>
+                        <div className="shadow-[0_0_50px] shadow-gray-700 flex flex-col text-center gap-8 p-8 w-full rounded-2xl bg-black transition-all duration-700 hover:scale-104 ">
+                            <h2 className="text-xl text-gray-400">{type.title}</h2>
+                            <p className="text-md text-snow">{type.text}</p>
                         </div>  
                     </div>
                 ))}

@@ -1,7 +1,18 @@
+"use client"
+
+import { useState } from "react";
+import {Menu, X} from "lucide-react"
+
 const Link = ({ texto, href }) => <li><a href={href}>{texto}</a></li>
 
 const Header = () =>
 {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleNavBar = () => {
+        setIsOpen(!isOpen)
+    }
+
     const linkStrings = {
         link1: {href: "#hero", texto: "Início"},
         link2: {href: "#solution", texto: "Solução"},
@@ -18,14 +29,22 @@ const Header = () =>
     
     return(
         <>
-            <header className="bg-black text-snow sticky top-0 z-50 left-0 right-0 w-full flex items-center justify-between px-8 h-15">
-                <h2 className="text-2xl max-md:text-lg">DAC - JOVI</h2>
+            <header className="bg-black text-snow sticky top-0 z-50 left-0 right-0 w-full flex flex-wrap items-center justify-between px-8 h-20">
+                <h2 className="text-sm">DAC - JOVI</h2>
 
                 <nav>
-                    <ul className="flex gap-6 items-center text-md px-6 max-md:text-[10px] max-md:gap-4">
+                    <ul className="hidden sm:flex sm:gap-3 items-center sm:text-[10px]">
                         {links}
                     </ul>
+                    <button onClick={toggleNavBar} className="sm:hidden">
+                        {isOpen ? <X /> : <Menu/>}
+                </button>
                 </nav>
+                {isOpen && (
+                    <div className="flex gap-6 flex-row items-center text-[7px] list-none sm:hidden">
+                        {links}
+                    </div>
+                )}
             </header>
         </>
     );

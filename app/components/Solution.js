@@ -12,22 +12,22 @@ const Solution = () =>
 
     return(
         <>
-            <section id="solution" className="grid grid-cols-1 gap-8 h-[190dvh] mx-8 max-md:h-[250dvh]">
+            <section id="solution" className="grid grid-cols-1 gap-8 min-h-dvh mx-10">
                 <h1 className="text-4xl pt-20 text-center">Solução</h1>
                 <div className="text-center">
-                    <p className="text-2xl">
+                    <p className="text-xl">
                         A equipe DAC, ao receber o desafio da JOVI, realizou uma pesquisa com 40 estudantes e identificou que uma das principais dificuldades no uso do celular para estudos é a desorganização da galeria, causada pela falta de tempo ou motivação. Para solucionar esse problema, a equipe desenvolveu o Camssify, uma ferramenta voltada à organização dos conteúdos de estudo, com as seguintes funções:
                     </p>
                 </div>
 
                 {functionsSolution.map((item) => (
-                    <div key={item.id} className="grid grid-cols-2 justify-items-center mx-8 ml-15 items-center max-md:grid-cols-1 max-md:gap-6">
-                        <div className="flex flex-col gap-2 w-full px-4 max-md:text-center">
-                            <h3 className="text-2xl font-bold">{item.title}</h3>
-                            <p className="text-lg">{item.text}</p>
+                    <div key={item.id} className="grid grid-cols-1 gap-6 justify-items-center mx-8 ml-15 items-center text-center">
+                        <div className="flex flex-col gap-2 w-full px-4">
+                            <h3 className="text-xl font-bold">{item.title}</h3>
+                            <p className="text-md">{item.text}</p>
                         </div>
 
-                        <div className="w-[60%] text-center">
+                        <div className="w-full text-center">
                             <img className="w-full transition-all duration-700 hover:scale-104 rounded-md" 
                             src={item.image} alt={item.imageAlt}
                         />

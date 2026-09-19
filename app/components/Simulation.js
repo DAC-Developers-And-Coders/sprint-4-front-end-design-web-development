@@ -14,7 +14,7 @@ const Simulation = () =>
 
     return(
         <>
-            <div className="grid grid-cols-2 gap-4 items-stretch p-6">
+            <div className="grid grid-cols-1 gap-4 items-stretch p-6">
                 <div key={images[4].id} className="border-4 p-6 rounded-2xl flex flex-col gap-3 transition-all duration-700 hover:scale-102">
                     <img className="w-full h-full" src={images[4].image} alt={images[4].alt} />
                     <h2 className="text-center text-lg">{images[4].text}</h2>
@@ -45,7 +45,7 @@ const Simulation = () =>
                     <h2 className="text-center text-lg">{images[5].text}</h2>
                 </div>
 
-                <div key={images[6].id} className="border-4 p-6 rounded-2xl flex flex-col gap-3 col-span-2 transition-all duration-700 hover:scale-102">
+                <div key={images[6].id} className="border-4 p-6 rounded-2xl flex flex-col gap-3 transition-all duration-700 hover:scale-102">
                     <img className="w-full h-full" src={images[6].image} alt={images[6].alt} />
                     <h2 className="text-center text-lg">{images[6].text}</h2>
                 </div>
