@@ -75,12 +75,12 @@ const LoginForm = () => {
 
     return (
         <>
-            <div className=" bg-snow border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-400 h-auto w-auto p-5 flex flex-col justify-center items-center">
+            <div className=" bg-snow border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-400 h-auto w-auto p-5 flex flex-col justify-center items-center sm:p-8">
                 <form onSubmit={handleLogin} className="flex flex-col gap-8 text-center items-center">
-                    <h1 className="text-2xl">Login</h1>
+                    <h1 className="text-2xl sm:text-5xl">Login</h1>
                     <div>
                         <input 
-                        className="w-60 h-8 text-center text-sm border-2 rounded-2xl transition-all duration-500 hover:scale-102"
+                        className="w-60 h-8 text-center text-sm border-2 rounded-2xl transition-all duration-500 hover:scale-102 sm:w-80 sm:h-10 sm:text-xl"
                         type="email" 
                         placeholder="E-mail"
                         value={username}
@@ -89,7 +89,7 @@ const LoginForm = () => {
                     
                     <div>
                         <input 
-                        className="w-60 h-8 text-center text-sm border-2 rounded-2xl transition-all duration-500 hover:scale-102"
+                        className="w-60 h-8 text-center text-sm border-2 rounded-2xl transition-all duration-500 hover:scale-102 sm:w-80 sm:h-10 sm:text-xl"
                         type="password" 
                         placeholder="Senha"
                         value={password}
@@ -97,10 +97,10 @@ const LoginForm = () => {
                     </div>
 
                     <div className="flex justify-center gap-12">
-                        <button type= "submit" className="w-24.75 h-10 border-2 rounded-xl text-lg transition-all duration-500 hover:scale-104">
+                        <button type= "submit" className="w-24.75 h-10 border-2 rounded-xl text-lg transition-all duration-500 hover:scale-104 sm:w-40.75 sm:h-12 sm:text-2xl">
                             Entrar
                         </button>
-                        <button type="button" className="w-24.75 h-10 border-2 rounded-xl text-lg transition-all duration-500 hover:scale-104" onClick={handleRegister}>
+                        <button type="button" className="w-24.75 h-10 border-2 rounded-xl text-lg transition-all duration-500 hover:scale-104 sm:w-40.75 sm:h-12 sm:text-2xl" onClick={handleRegister}>
                             Cadastrar
                         </button>
                     </div>
