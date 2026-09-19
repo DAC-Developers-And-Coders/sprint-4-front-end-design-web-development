@@ -15,10 +15,12 @@ const Team = () =>
                 
                 <div className="flex flex-wrap justify-center gap-5 p-4">
                     {team.map((member) => (
-                        <div key={member.id} className="w-full h-auto border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104 p-3 flex flex-col gap-2">
-                            <h2 className="text-2xl text-center lg:text-4xl">{member.name}</h2>
-                            <h3 className="text-xl text-center lg:text-3xl">{member.rm}</h3>
-                            <p className="text-lg text-center lg:text-2xl">{member.text}</p> 
+                        <div key={member.id} className="w-full h-auto border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104 p-3 flex flex-col gap-2
+                        xl: md:w-[calc(33.3%-1.5rem)] 
+">
+                            <h2 className="text-2xl text-center lg:text-4xl xl:text-xl 2xl:text-4xl">{member.name}</h2>
+                            <h3 className="text-xl text-center lg:text-3xl xl:text-lg 2xl:text-3xl">{member.rm}</h3>
+                            <p className="text-lg text-center lg:text-2xl xl:text-sm 2xl:text-2xl">{member.text}</p> 
                         </div>
                     ))}
                 </div>

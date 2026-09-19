@@ -31,12 +31,12 @@ const Header = () =>
         <>
             <header className="bg-black text-snow sticky top-0 z-50 left-0 right-0 w-full flex flex-wrap items-center justify-between px-8 h-20
             md:h-15">
-                <h2 className="text-sm md:text-xl">DAC - JOVI</h2>
+                <h2 className="text-sm md:text-xl 2xl:text-3xl">DAC - JOVI</h2>
 
                 <nav>
                     <ul className="hidden items-center 
                     sm:flex sm:gap-3 sm:text-[10px]
-                    md:gap-4 md:text-sm">
+                    md:gap-4 md:text-sm 2xl:text-lg">
                         {links}
                     </ul>
                     <button onClick={toggleNavBar} className="sm:hidden">
@@ -44,9 +44,9 @@ const Header = () =>
                 </button>
                 </nav>
                 {isOpen && (
-                    <div className="flex gap-6 flex-row items-center text-[7px] list-none sm:hidden">
+                    <ul className="flex gap-6 flex-row items-center text-[7px] list-none sm:hidden">
                         {links}
-                    </div>
+                    </ul>
                 )}
             </header>
         </>

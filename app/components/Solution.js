@@ -21,14 +21,14 @@ const Solution = () =>
                 </div>
 
                 {functionsSolution.map((item) => (
-                    <div key={item.id} className="grid grid-cols-1 gap-6 justify-items-center mx-2 items-center text-center">
-                        <div className="flex flex-col gap-2 w-full px-4 lg:gap-4">
-                            <h3 className="text-xl font-bold md:text-2xl lg:text-4xl">{item.title}</h3>
-                            <p className="text-md lg:text-2xl">{item.text}</p>
+                    <div key={item.id} className="grid grid-cols-1 gap-6 justify-items-center mx-2 items-center text-center xl:grid-cols-2  xl:text-balance xl:text-left">
+                        <div className="flex flex-col gap-2 w-full px-4 lg:gap-4 pl-15">
+                            <h3 className="text-xl font-bold md:text-2xl lg:text-4xl xl:text-3xl">{item.title}</h3>
+                            <p className="text-md lg:text-2xl xl:text-xl">{item.text}</p>
                         </div>
 
                         <div className="w-full text-center">
-                            <img className="w-full transition-all duration-700 hover:scale-104 rounded-md" 
+                            <img className="w-full transition-all duration-700 hover:scale-104 rounded-md xl:hover:scale-106" 
                             src={item.image} alt={item.imageAlt}
                         />
                         </div>
