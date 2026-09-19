@@ -10,15 +10,15 @@ const Team = () =>
     return(
         <>
             <section id="team" className="grid grid-cols-1 min-h-dvh gap-8 mx-10">
-                <h1 className="text-4xl pt-20 text-center">Conheça nossa Equipe!</h1>
-                <h2 className="text-2xl text-center">Developers and Coders</h2>
+                <h1 className="text-4xl pt-20 text-center lg:text-5xl">Conheça nossa Equipe!</h1>
+                <h2 className="text-2xl text-center lg:text-4xl">Developers and Coders</h2>
                 
                 <div className="flex flex-wrap justify-center gap-5 p-4">
                     {team.map((member) => (
                         <div key={member.id} className="w-full h-auto border-3 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104 p-3 flex flex-col gap-2">
-                            <h2 className="text-2xl text-center">{member.name}</h2>
-                            <h3 className="text-xl text-center">{member.rm}</h3>
-                            <p className="text-lg text-center">{member.text}</p> 
+                            <h2 className="text-2xl text-center lg:text-4xl">{member.name}</h2>
+                            <h3 className="text-xl text-center lg:text-3xl">{member.rm}</h3>
+                            <p className="text-lg text-center lg:text-2xl">{member.text}</p> 
                         </div>
                     ))}
                 </div>

@@ -13,18 +13,18 @@ const Solution = () =>
     return(
         <>
             <section id="solution" className="grid grid-cols-1 gap-8 min-h-dvh mx-10">
-                <h1 className="text-4xl pt-20 text-center">Solução</h1>
+                <h1 className="text-4xl pt-20 text-center lg:text-5xl">Solução</h1>
                 <div className="text-center">
-                    <p className="text-xl">
+                    <p className="text-xl lg:text-3xl">
                         A equipe DAC, ao receber o desafio da JOVI, realizou uma pesquisa com 40 estudantes e identificou que uma das principais dificuldades no uso do celular para estudos é a desorganização da galeria, causada pela falta de tempo ou motivação. Para solucionar esse problema, a equipe desenvolveu o Camssify, uma ferramenta voltada à organização dos conteúdos de estudo, com as seguintes funções:
                     </p>
                 </div>
 
                 {functionsSolution.map((item) => (
-                    <div key={item.id} className="grid grid-cols-1 gap-6 justify-items-center mx-8 ml-15 items-center text-center">
-                        <div className="flex flex-col gap-2 w-full px-4">
-                            <h3 className="text-xl font-bold">{item.title}</h3>
-                            <p className="text-md">{item.text}</p>
+                    <div key={item.id} className="grid grid-cols-1 gap-6 justify-items-center mx-2 items-center text-center">
+                        <div className="flex flex-col gap-2 w-full px-4 lg:gap-4">
+                            <h3 className="text-xl font-bold md:text-2xl lg:text-4xl">{item.title}</h3>
+                            <p className="text-md lg:text-2xl">{item.text}</p>
                         </div>
 
                         <div className="w-full text-center">

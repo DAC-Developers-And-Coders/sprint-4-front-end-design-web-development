@@ -9,15 +9,15 @@ const Contact = () =>
     return(
         <>
             <section id="contact" className="grid grid-cols-1 min-h-dvh gap-8">
-                <h1 className="text-4xl pt-20 text-center">Contato</h1>
-                <h2 className="text-xl text-center mx-10">Gostaria de falar conosco? Pode nos encontrar nas seguintes plataformas!</h2>
-                <div className="grid grid-cols-1 gap-3 mx-10">
+                <h1 className="text-4xl pt-20 text-center lg:text-5xl">Contato</h1>
+                <h2 className="text-xl text-center mx-10 lg:text-2xl">Gostaria de falar conosco? Pode nos encontrar nas seguintes plataformas!</h2>
+                <div className="grid grid-cols-1 gap-3 mx-10 md:justify-items-center">
                     {contacts.map((contact) => (
-                        <div key={contact.id} className="border-3 rounded-2xl transition-all duration-700 hover:scale-102 p-3 flex flex-col gap-1 items-center text-center">
+                        <div key={contact.id} className="border-3 rounded-2xl transition-all duration-700 hover:scale-102 p-3 flex flex-col gap-1 items-center text-center md:w-70 lg:w-100">
                             <a href={contact.link}>
-                                <img className="size-40" src={contact.image}></img>
+                                <img className="size-40 lg:size-65" src={contact.image}></img>
                             </a>
-                            <h2 className="text-xl">{contact.name}</h2>
+                            <h2 className="text-xl lg:text-3xl">{contact.name}</h2>
                         </div>
                     ))}
                 </div>
