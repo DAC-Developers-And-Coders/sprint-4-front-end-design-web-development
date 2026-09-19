@@ -135,7 +135,7 @@ O projeto foi publicado utilizando a **Vercel**.
 
 ### Link do Deploy
 
-**[https://web-sprint-3.vercel.app/]**
+**[https://web-front-sprint-4.vercel.app/]**
 
 ---
 
