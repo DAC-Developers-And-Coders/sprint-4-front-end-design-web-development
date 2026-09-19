@@ -33,9 +33,7 @@ const Header = () =>
                 <h2 className="text-sm md:text-xl 2xl:text-3xl">DAC - JOVI</h2>
 
                 <nav>
-                    <ul className="hidden items-center 
-                    sm:flex sm:gap-3 sm:text-[10px]
-                    md:gap-4 md:text-sm 2xl:text-lg">
+                    <ul className="hidden items-center sm:flex sm:gap-3 sm:text-[10px] md:gap-4 md:text-sm 2xl:text-lg">
                         {links}
                     </ul>
                     <button onClick={toggleNavBar} className="sm:hidden">

@@ -21,15 +21,13 @@ const Gallery = () =>
                 <div className="w-full h-full border-2 rounded-2xl shadow-[0_0_50px] shadow-gray-700 transition-all duration-700 hover:scale-104">
                     <Carousel autoStage={true}>
                         {stages.map((stage) => (
-                            <div key={stage.id || stage.image} className="min-w-full flex flex-col gap-5 items-center justify-center
-                            lg:flex-row
-                            2xl:gap-15">
+                            <div key={stage.id || stage.image} className="min-w-full flex flex-col gap-5 items-center justify-center lg:flex-row 2xl:gap-15">
                                 <img 
                                     src={stage.image} 
                                     alt={stage.alt} 
                                     className="w1/2 h-150 pt-2"
                                 />
-                                <h2 className="w-1/2 text-sm text-center md:text-lg lg:text-3xl 2xl:w-[40%] 2xl:text-4xl">
+                                <h2 className="w-1/2 text-sm text-center md:text-lg lg:text-3xl 2xl:w-[40%]  2xl:text-4xl">
                                     {stage.text}
                                 </h2>
                             </div>
