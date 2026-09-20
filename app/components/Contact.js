@@ -23,9 +23,9 @@ const Contact = () =>
                 </div>
 
                 <footer className=" bg-black w-full h-25 mt-auto grid grid-cols-3 gap-2 items-center justify-items-center">
-                    <img className="size-15" src="./assets/images/DAC_logo_mini.png" alt="Dac icon"/>
-                    <a href="https://www.fiap.com.br/" target="_blank"><img className="size-15" src="./assets/images/fiap_logo.png" alt="fiap icon" /></a>
-                    <a href="https://www.jovimobile.com/" target="_blank"><img className="size-15" src="./assets/images/jovi_logo_white.png" alt="jovi icon" /></a>
+                    <img className="w-15 md:w-20 lg:w-25 xl:w-30" src="./assets/images/DAC_logo_mini.png" alt="Dac icon"/>
+                    <a href="https://www.fiap.com.br/" target="_blank"><img className="w-15 md:w-20 lg:w-25 xl:w-30" src="./assets/images/fiap_logo.png" alt="fiap icon" /></a>
+                    <a href="https://www.jovimobile.com/" target="_blank"><img className="w-15 md:w-20 lg:w-25 xl:w-30" src="./assets/images/jovi_logo_white.png" alt="jovi icon" /></a>
                 </footer>
             </section>
         </>
