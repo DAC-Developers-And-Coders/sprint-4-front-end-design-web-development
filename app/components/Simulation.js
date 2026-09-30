@@ -62,16 +62,9 @@ const Simulation = () =>
                 <Lightbox
                     open={true}
                     close={() => setOpen(null)}
-                    slides={[
-                        {
-                            src: open,
-                        },
-                    ]}
+                    slides={[{src: open,},]}
                     plugins={[Zoom]}
-                    render={{
-                        buttonPrev: () => null,
-                        buttonNext: () => null,
-                    }}
+                    render={{buttonPrev: () => null, buttonNext: () => null,}}
                 />
             )}
         </>
