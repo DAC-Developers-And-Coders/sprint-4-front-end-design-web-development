@@ -58,13 +58,22 @@ const Simulation = () =>
                 </div>
             </div>
 
-            <Lightbox
-                open={true}
-                close={() => setOpen(null)}
-                slides={[{src: open,},]}
-                plugins={[Zoom]}
-                render={{buttonPrev: () => null, buttonNext: () => null,}}
-            />
+            {open && (
+                <Lightbox
+                    open={true}
+                    close={() => setOpen(null)}
+                    slides={[
+                        {
+                            src: open,
+                        },
+                    ]}
+                    plugins={[Zoom]}
+                    render={{
+                        buttonPrev: () => null,
+                        buttonNext: () => null,
+                    }}
+                />
+            )}
         </>
     )
 }
