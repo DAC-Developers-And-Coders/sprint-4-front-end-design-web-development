@@ -59,7 +59,7 @@ const Simulation = () =>
             </div>
 
             <Lightbox
-                open={open !== null}
+                open={true}
                 close={() => setOpen(null)}
                 slides={[{src: open,},]}
                 plugins={[Zoom]}
