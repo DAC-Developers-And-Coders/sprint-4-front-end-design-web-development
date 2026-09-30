@@ -17,6 +17,7 @@ const Simulation = () =>
         {id: 5, image:"./assets/images/gallery/contraste_1.jpeg", text:"Imagem sem contraste", alt:"non-contrast image"},
         {id: 6, image:"./assets/images/gallery/simulation_3.jpeg", text:"A solução criando um plano de estudos", alt:"Solution: Creating the study plan"},
         {id: 7, image:"./assets/images/gallery/simulation_4.jpeg", text:"A pasta criada com base na tag", alt:"with the folders created and the photos saved"},
+        {id: 8, image:"./assets/images/gallery/simulation_5.jpeg", text:"A pasta criada no Google Drive com base na tag", alt:"with the folders created and the photos saved in Google Drive"},
     ];
 
     return(
@@ -55,6 +56,11 @@ const Simulation = () =>
                 <div key={images[6].id} className="border-4 p-6 rounded-2xl flex flex-col gap-3 transition-all duration-700 hover:scale-102 lg:col-span-2">
                     <img onClick={() => setOpen(images[6].image)} className="w-full h-full" src={images[6].image} alt={images[6].alt} />
                     <h2 className="text-center text-lg md:text-xl lg:text-2xl">{images[6].text}</h2>
+                </div>
+
+                <div key={images[7].id} className="border-4 p-6 rounded-2xl flex flex-col gap-3 transition-all duration-700 hover:scale-102 lg:col-span-2">
+                    <img onClick={() => setOpen(images[7].image)} className="w-full h-full" src={images[7].image} alt={images[7].alt} />
+                    <h2 className="text-center text-lg md:text-xl lg:text-2xl">{images[7].text}</h2>
                 </div>
             </div>
 
