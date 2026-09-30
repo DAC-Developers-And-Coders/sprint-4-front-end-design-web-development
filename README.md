@@ -53,6 +53,7 @@ O site deste repositório foi desenvolvido utilizando as seguintes tecnologias:
 * Fontes personalizadas **Montserrat**;
 * Estrutura de projeto baseada em componentes do Next.js.
 * Utilizacação da Biblioteca de Ícones: **Lucide-React**
+* Utilizacação da Biblioteca de Formato de Imagem: **Yet Another React Lightbox**
 
 ---
 
@@ -88,6 +89,12 @@ Biblioteca de Ícones
 
 ```bash
 npm install lucide-react
+```
+
+Biblioteca para exibir as fotos em formato de janela model.
+
+```bash
+npm install yet-another-react-lightbox
 ```
 
 ---

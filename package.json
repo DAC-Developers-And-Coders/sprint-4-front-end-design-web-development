@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.5",
+    "lightbox2": "^2.12.0",
     "lucide-react": "^1.47.0",
     "next": "16.3.5",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "yet-another-react-lightbox": "^3.32.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -41,7 +41,7 @@ const Header = () =>
                 </button>
                 </nav>
                 {isOpen && (
-                    <ul className="flex gap-6 flex-row items-center text-[7px] list-none sm:hidden">
+                    <ul className="flex gap-2 flex-row items-center text-[8px] list-none sm:hidden">
                         {links}
                     </ul>
                 )}
