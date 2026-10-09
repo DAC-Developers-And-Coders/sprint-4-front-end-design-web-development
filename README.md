@@ -47,6 +47,7 @@ O site deste repositório foi desenvolvido utilizando as seguintes tecnologias:
 
 ### Recursos adicionais
 
+* Integração da API Google Identity para autenticação com a Google Auth Platform;
 * Componentes React com `useState` para gerenciamento de estado;
 * CSS responsivo utilizando `@media`;
 * Animações e transições utilizando CSS;
