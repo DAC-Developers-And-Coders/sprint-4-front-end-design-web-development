@@ -35,6 +35,7 @@ const Gallery = () =>
                     </Carousel>
                 </div>
                 <h2 className="text-2xl text-center lg:text-3xl">Simulação</h2>
+                <h3 className="text-lg text-center lg:text-xl">Clique para abrir a imagem!</h3>
                 <Simulation/>
             </section>
         </>
